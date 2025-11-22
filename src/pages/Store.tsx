@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
-import { ShoppingBag, Search, User } from "lucide-react";
+import { Search, User } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import ProductGrid from "@/components/store/ProductGrid";
+import CartSheet from "@/components/store/CartSheet";
 
 const Store = () => {
   return (
@@ -36,9 +37,7 @@ const Store = () => {
                   <User className="h-5 w-5" />
                 </Button>
               </Link>
-              <Button variant="ghost" size="icon">
-                <ShoppingBag className="h-5 w-5" />
-              </Button>
+              <CartSheet />
             </div>
           </div>
         </div>
